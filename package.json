@@ -1,0 +1,40 @@
+{
+  "name": "notpyramus",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "webpack-dev-server --devtool evail --progress --colors--content-base build ",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "async": "*",
+    "bcrypt-nodejs": "*",
+    "body-parser": "*",
+    "bookshelf": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "express": "*",
+    "express-session": "*",
+    "jade": "*",
+    "jsx-loader": "*",
+    "knex": "*",
+    "morgan": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "pg": "*",
+    "react": "*",
+    "reactify": "*",
+    "remarkable": "*",
+    "serve-favicon": "*"
+  },
+  "devDependencies": {
+    "babel": "*",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "react-hot-loader": "*",
+    "webpack": "*",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "*"
+  }
+}

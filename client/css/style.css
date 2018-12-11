@@ -1,0 +1,394 @@
+/* ------------------------------
+ * universal
+ * ------------------------------ */
+* {
+    box-sizing: border-box;
+}
+
+#title {
+    font-size: 3.5rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: auto;
+    padding: 0 10px 0 10px;
+    /* font-size: 16px; */
+    max-width: 960px;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 16px;
+}
+
+a {
+    color: #5395FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 a {
+    color: #333;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+hr {
+    border-width: 0;
+    border-top: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+/* Inspiration from Skeleton.css */
+.button, input[type="submit"] {
+    background: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.675rem;
+    line-height: 28px;
+    height: 40px;
+    width: 150px;
+    letter-spacing: 0.2em;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #BABABA;
+    color: #BABABA;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* input[type="submit"] { */
+/*     line-height: 0px; */
+/*     font-size: 8px; */
+/*     width: 100px; */
+/*     height: 25px; */
+/*     font-size: 0.5rem; */
+/* } */
+
+.button:hover, input[type="submit"]:hover  {
+    text-decoration: none;
+    color: #777;
+    border-color: #777;
+}
+
+input[type="text"], input[type="password"] {
+    border: 1px solid #BABABA;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+::-webkit-input-placeholder {
+    color: #BABABA;
+}
+
+:-moz-placeholder {
+    color: #BABABA;
+}
+
+::-moz-placeholder {
+    color: #BABABA;
+}
+
+:-ms-input-placeholder {
+    color: #BABABA;
+}
+
+.thread-reply-textarea {
+    width: 300px;
+    height: 100px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    padding: 8px;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid #BABABA;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #626262;
+    width: 284px;
+    height: 105px;
+}
+
+blockquote {
+    background: #efefef;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left: 5px solid #ccc;
+}
+
+/* ------------------------------
+ * layout.jade
+ * ------------------------------ */
+#sidebar {
+    float: right;
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    #sidebar {
+        display: block;
+        float: none;
+    }
+}
+
+#subpy {
+    font-weight: 400;
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#content {
+    /* width: calc(100% - 250px); */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    /* margin-left: 300px; */
+}
+
+#topbar {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    height: 100px;
+}
+
+#topbar h1 a {
+}
+
+#user-bar {
+    float: right;
+}
+
+/* ------------------------------
+ * subpyfiller.js
+ * ------------------------------ */
+.subpys-list-app {
+    display: inline-block;
+    float: left;
+}
+.subpys-list li {
+    display: inline;
+    margin-right: 6px;
+}
+
+/* ------------------------------
+ * postsfiller.js
+ * ------------------------------ */
+.posts-app a {
+    text-decoration: none;
+}
+
+.posts-app a:hover {
+    text-decoration: underline;
+}
+
+.posts-app p {
+    margin: 0;
+}
+
+.posts-app ul {
+    list-style-type: none;
+}
+
+#react-comment-app-mount > div > li {
+    list-style-type: none;
+}
+
+/* ------------------------------
+ * Comment.jsx
+ * ------------------------------ */
+#react-comment-app-mount > div > ul > li {
+    list-style-type: none;
+}
+
+.depth2 {
+    margin-left: 50px;
+}
+
+.depth3 {
+    margin-left: 100px;
+}
+
+.depth4 {
+    margin-left: 150px;
+}
+
+.depth5 {
+    margin-left: 200px;
+}
+
+.depth6 {
+    margin-left: 250px;
+}
+
+.comment {
+    margin-bottom: 20px;
+    color: #626262;
+}
+
+.comment p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.comment blockquote p  {
+    margin: 0;
+    padding: 0;
+}
+
+.comment-top-banner {
+    color: #acacac;
+    font-size: 0.875rem;
+}
+
+.comment-author {
+    font-weight: 700;
+    color: #5395FF;
+}
+
+.comment-points-banner-upvoted {
+    color: #FCA53D;
+}
+
+.comment-upvote-button {
+    cursor: pointer;
+}
+
+.comment-upvote-button-wrapper {
+    width: 15px;
+}
+
+/* ------------------------------
+ * ReplyBox.jsx
+ * ------------------------------ */
+
+.reply-box-banner {
+    font-size: 0.875rem;
+    color: #acacac;
+}
+
+.reply-box-reply-button,
+.reply-box-cancel-button {
+    color: #929292;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.reply-box-reply-button:hover,
+.reply-box-cancel-button:hover {
+    color: #777;
+    text-decoration: none;
+}
+
+.reply-box-cancel-button {
+    color: #E93E37;
+}
+
+.reply-box-cancel-button:hover {
+    color: #8C4646;
+}
+
+.reply-box-textarea {
+    margin-top: 5px;
+    padding: 7px;
+}
+
+/* ------------------------------
+ * Post.jsx
+ * ------------------------------ */
+.post {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+
+.post-title {
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.post-info-banner {
+    color: #acacac;
+    font-size: 0.875rem;
+    display: inline-block;
+}
+
+.post-info-banner a, .post-points {
+    color: #616161;
+}
+
+.post-info-banner p {
+    margin: 0;
+}
+
+.post-points-banner-upvoted {
+    color: #FCA53D;
+}
+
+.post-upvote-button-wrapper {
+    width: 45px;
+    height: 50px;
+    display: inline-block;
+    float: left;
+}
+
+.post-upvote-button {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 9px;
+}
+
+.post-upvote-button-not-upvoted {
+    opacity: 0.75;
+}
+
+.post-upvote-button-not-upvoted:hover {
+    opacity: 1.0;
+}
+
+.post-self-text-banner {
+    margin: 0;
+}

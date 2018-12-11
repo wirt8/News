@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1
+        a(href='/r/' + subpy)#subpy= subpy
+    div#react-comment-app-mount
+    script#comment-thread-script(src='/build/CommentThreadApp.bundle.js', postId= postId)
